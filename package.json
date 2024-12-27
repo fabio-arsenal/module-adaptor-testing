@@ -1,6 +1,6 @@
 {
   "name": "@fabio-arsenal/module-adaptor-testing",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Import ES6 Modules into a Razzle Project (testing phase)",
   "main": "dist/library.js",
   "scripts": {
