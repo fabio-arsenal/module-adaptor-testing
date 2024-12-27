@@ -5,7 +5,7 @@ const baseConfig = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        library: 'MyLibrary',
+        library: 'module-adaptor-testing',
         libraryTarget: 'umd',
         globalObject: 'this',
     },
