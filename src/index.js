@@ -1,2 +1,4 @@
+import f from 'fetch-mock';
+
 export const sinon = require('sinon');
-export const fetchMock = require('fetch-mock');
+export const fetchMock = f;
