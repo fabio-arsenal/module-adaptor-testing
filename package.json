@@ -1,8 +1,8 @@
 {
   "name": "@fabio-arsenal/module-adaptor-testing",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Import ES6 Modules into a Razzle Project (testing phase)",
-  "main": "dist/bundle.js",
+  "main": "dist/library.js",
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "clean": "lerna clean --yes",
@@ -34,6 +34,7 @@
     "@types/node": ">=18",
     "babel-loader": "^9.2.1",
     "execa": "^9.5.2",
+    "fetch-mock": "^12.2.0",
     "fs-extra": "^11.2.0",
     "glob": "^11.0.0",
     "inquirer": "^12.3.0",
@@ -49,6 +50,9 @@
   "license": "MIT",
   "engines": {
     "node": "20.5.0"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
   },
   "files": [
     "dist",

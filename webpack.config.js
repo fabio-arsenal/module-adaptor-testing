@@ -15,7 +15,31 @@ const baseConfig = {
     },
     resolve: {
         fallback: { "util": false },
-    }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/, // Match JavaScript files
+                loader: 'babel-loader',
+                exclude: /node_modules/, // Exclude all node_modules by default
+                include: [
+                    path.resolve(__dirname, 'src'), // Include your source code
+                    path.resolve(__dirname, 'node_modules/sinon'), // Include the specific module
+                    path.resolve(__dirname, 'node_modules/fetch-mock'), // Include the specific module
+                ],
+                options: {
+                    presets: [
+                        [
+                            '@babel/preset-env',
+                            {
+                                targets: '> 0.25%, not dead', // Adjust target browsers as needed
+                            },
+                        ],
+                    ],
+                },
+            },
+        ],
+    },
 };
 
 const unminifiedConfig = {

@@ -1,3 +1,2 @@
-const s = require('sinon');
-
-export const sinon = s;
+export const sinon = require('sinon');
+export const fetchMock = require('fetch-mock');
