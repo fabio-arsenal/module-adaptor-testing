@@ -1,6 +1,6 @@
 {
   "name": "@fabio-arsenal/module-adaptor-testing",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Import ES6 Modules into a Razzle Project (testing phase)",
   "main": "dist/library.js",
   "scripts": {
@@ -34,7 +34,6 @@
     "@types/node": ">=18",
     "babel-loader": "^9.2.1",
     "execa": "^9.5.2",
-    "fetch-mock": "^12.2.0",
     "fs-extra": "^11.2.0",
     "glob": "^11.0.0",
     "inquirer": "^12.3.0",

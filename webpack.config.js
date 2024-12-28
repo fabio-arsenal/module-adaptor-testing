@@ -25,7 +25,6 @@ const baseConfig = {
                 include: [
                     path.resolve(__dirname, 'src'), // Include your source code
                     path.resolve(__dirname, 'node_modules/sinon'), // Include the specific module
-                    path.resolve(__dirname, 'node_modules/fetch-mock'), // Include the specific module
                 ],
                 options: {
                     presets: [
